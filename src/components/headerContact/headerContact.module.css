@@ -1,0 +1,37 @@
+.headerContact {
+  text-align: right;
+}
+
+.button1 {
+  /* display: inline-block;
+  padding: var(--space8-12px);
+  border-radius: 3px; */
+  /* 後で書く */
+}
+
+.button2 {
+  /* 後で書く */
+}
+
+@media (min-width: 768px) {
+  .headerContact a {
+    display: inline-block;
+    padding: calc(var(--space8-12px) * 0.5) var(--space24-36px);
+    border-radius: 5px;
+    color: var(--white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .button1 {
+    background-color: var(--blue);
+  }
+  .button2 {
+    background-color: var(--red);
+    margin-left: var(--space16-18px);
+  }
+
+  .tell {
+    font-size: var(--font20-24px);
+    margin-top: 0.25rem;
+  }
+}
