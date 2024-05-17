@@ -1,0 +1,128 @@
+.header {
+  padding: var(--space16-18px);
+}
+
+.headerUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: calc(var(--heading1) * 1.5);
+  height: calc(var(--heading1) * 1.5);
+  margin-right: 0.25rem;
+}
+
+.logo p {
+  font-size: var(--font10-14px);
+}
+
+.headerContact {
+  text-align: right;
+}
+
+.button1 {
+  /* display: inline-block;
+  padding: var(--space8-12px);
+  border-radius: 3px; */
+  /* 後で書く */
+}
+
+.button2 {
+  /* 後で書く */
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: var(--space24-36px) var(--space40-60px) var(--space40-60px);
+  }
+
+  .logo img {
+    width: calc(var(--heading1) * 1.5);
+    height: calc(var(--heading1) * 1.5);
+  }
+
+  .headerContact a {
+    display: inline-block;
+    padding: calc(var(--space8-12px) * 0.5) var(--space24-36px);
+    border-radius: 5px;
+    color: var(--white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .button1 {
+    background-color: var(--blue);
+  }
+  .button2 {
+    background-color: var(--red);
+    margin-left: var(--space16-18px);
+  }
+
+  .tell {
+    font-size: var(--font20-24px);
+    margin-top: 0.25rem;
+  }
+
+  .nav {
+    margin-top: var(--space24-36px);
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: end;
+  }
+
+  .nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font10-14px);
+    padding: 0.25rem var(--space20-30px);
+    border-left: 1px solid var(--gray-1);
+    color: var(--base-color);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav li:last-child a {
+    border-right: 1px solid var(--gray-1);
+  }
+
+  .nav a svg {
+    font-size: var(--font28-34px);
+    color: var(--green-1);
+    margin-bottom: 0.25rem;
+  }
+
+  .nav a:hover {
+    background-color: var(--green-3);
+  }
+
+  .nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--green-1);
+    transition: width 0.3s ease;
+  }
+
+  .nav a:hover::after {
+    width: 100%;
+  }
+}

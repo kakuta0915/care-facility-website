@@ -5,9 +5,9 @@ import globalStyles from "@/src/globalStyle.module.css";
 
 function Home() {
   return (
-    <>
+    <div className={globalStyles.styles}>
       <Header />
-    </>
+    </div>
   );
 }
 
