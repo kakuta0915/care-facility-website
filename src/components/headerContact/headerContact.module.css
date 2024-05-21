@@ -4,14 +4,25 @@
 }
 
 .button1 {
-  /* display: inline-block;
+  display: inline-block;
+  color: var(--white);
   padding: var(--space8-12px);
-  border-radius: 3px; */
-  /* 後で書く */
+  margin: var(--space16-18px) var(--space8-12px);
+  border-radius: 3px;
+  background-color: var(--blue);
 }
 
 .button2 {
-  /* 後で書く */
+  display: inline-block;
+  color: var(--white);
+  padding: var(--space8-12px);
+  margin: var(--space16-18px) var(--space8-12px);
+  border-radius: 3px;
+  background-color: var(--red);
+}
+
+.headerContact > p {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -29,6 +40,10 @@
   .button2 {
     background-color: var(--red);
     margin-left: var(--space16-18px);
+  }
+
+  .headerContact > p {
+    text-align: right;
   }
 
   .tell {
