@@ -67,7 +67,7 @@
     z-index: 100;
     text-align: center;
     place-content: center;
-    gap: 40px;
+    gap: 20px;
     inset: 0 -100% 0 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
