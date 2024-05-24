@@ -67,7 +67,8 @@
     z-index: 100;
     text-align: center;
     place-content: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
     inset: 0 -100% 0 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--white);
@@ -78,8 +79,16 @@
     transform: translateX(-100%);
   }
 
+  .navContents li * {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: var(--font20-24px);
+    color: var(--white);
+  }
+
   .navContents li {
-    font-size: var(--font16-18px);
+    margin-bottom: var(--space20-30px);
   }
 }
 
@@ -94,7 +103,7 @@
   }
 
   .nav {
-    margin-top: var(--space24-36px);
+    margin-top: var(--space16-18px);
   }
 
   .nav ul {

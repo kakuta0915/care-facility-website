@@ -10,8 +10,8 @@ const HeaderContact: React.FC = () => {
       <a href="/" className={styles.button2}>
         見学予約
       </a>
-      <p className={styles.tell}>0120-123-456</p>
-      <p className={styles.time}>営業時間 10:00 ~ 18:00</p>
+      <p> 電話番号 0120-123-456</p>
+      <p>営業時間 10:00 ~ 18:00</p>
     </div>
   );
 };
