@@ -1,0 +1,32 @@
+.headerLogo {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo img {
+  width: calc(var(--heading1) * 1.1);
+  height: calc(var(--heading1) * 1.1);
+  margin-right: 0.25rem;
+}
+
+.headerLogo h1 {
+  font-size: calc(var(--heading1) * 0.75);
+}
+
+.headerLogo p {
+  font-size: calc(var(--font10-14px) * 0.75);
+}
+
+@media (min-width: 768px) {
+  .headerLogo img {
+    width: calc(var(--heading1) * 1.5);
+    height: calc(var(--heading1) * 1.5);
+  }
+
+  .headerLogo h1 {
+    font-size: var(--heading1);
+  }
+}
