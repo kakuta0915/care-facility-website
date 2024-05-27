@@ -64,12 +64,14 @@
   }
 
   .title {
+    width: 30vw;
     margin-bottom: 0;
   }
 
   .contactBox {
+    width: 60vw;
     border-left: 2px solid var(--gray-1);
-    padding: var(--space20-30px) var(--space30-45px);
+    padding: var(--space20-30px) clamp(1.25rem, -3.036rem + 8.93vw, 5rem);
   }
 
   .link {
@@ -79,7 +81,13 @@
   }
 
   .link li {
-    margin: 0 var(--space16-18px) 0;
+    margin: 0 clamp(0.5rem, -0.071rem + 1.19vw, 1rem) 0;
+  }
+
+  .link li a {
+    font-size: var(--font16-18px);
+    padding: clamp(0.5rem, 0.214rem + 0.6vw, 0.75rem)
+      clamp(1rem, -0.143rem + 2.38vw, 2rem);
   }
 
   .link a:hover {
@@ -89,7 +97,7 @@
 
   .tell {
     border-top: 2px solid var(--gray-1);
-    padding-top: 2rem;
-    margin-top: var(--space20-30px);
+    padding-top: var(--space20-30px);
+    margin-top: var(--space30-45px);
   }
 }
