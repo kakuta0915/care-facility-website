@@ -6,7 +6,7 @@ import globalStyles from "@/src/globalStyle.module.css";
 
 const Header: React.FC = () => {
   return (
-    <header className={`${styles.headder} ${globalStyles.styles}`}>
+    <header className={`${styles.header} ${globalStyles.styles}`}>
       <HeaderLogo />
       <Nav />
     </header>
