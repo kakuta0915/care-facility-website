@@ -21,10 +21,9 @@ const Nav: React.FC = () => {
 
   return (
     <div
-      className={[
-        navIsOpen ? styles.open : styles.close,
-        globalStyles.styles,
-      ].join(" ")}
+      className={`${navIsOpen ? styles.open : styles.close}
+      ${globalStyles.styles}
+`}
     >
       {navIsOpen && (
         <style>{`

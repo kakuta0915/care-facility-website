@@ -4,7 +4,7 @@ import globalStyles from "@/src/globalStyle.module.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer className={[styles.footer, globalStyles.styles].join(" ")}>
+    <footer className={`${styles.footer} ${globalStyles.styles}`}>
       <h1>健進会</h1>
       <nav>
         <ul>
