@@ -1,0 +1,18 @@
+.newsSection {
+  margin: var(--space30-45px) auto;
+}
+
+.newsSection h3 {
+  text-align: center;
+  margin-bottom: var(--space20-30px);
+}
+
+@media (min-width: 768px) {
+  .newsSection {
+  }
+
+  .newsBox {
+    display: flex;
+    flex-direction: row;
+  }
+}
