@@ -14,6 +14,7 @@
 
 .headerLogo h1 {
   font-size: calc(var(--heading1) * 0.75);
+  white-space: nowrap;
 }
 
 .headerLogo p {
@@ -28,5 +29,9 @@
 
   .headerLogo h1 {
     font-size: var(--heading1);
+  }
+
+  .headerLogo p {
+    font-size: var(--font16-18px);
   }
 }

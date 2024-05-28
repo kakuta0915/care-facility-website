@@ -116,7 +116,8 @@
     flex-direction: column;
     align-items: center;
     font-size: var(--font10-14px);
-    padding: 0.25rem var(--space20-30px);
+    white-space: nowrap;
+    padding: 0.25rem clamp(1rem, -0.357rem + 2.83vw, 2.188rem);
     border-left: 1px solid var(--gray-1);
     color: var(--base-color);
     position: relative;

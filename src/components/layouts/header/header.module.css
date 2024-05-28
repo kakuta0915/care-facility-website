@@ -6,6 +6,6 @@
 
 @media (min-width: 768px) {
   .header {
-    padding: var(--space24-36px) var(--space30-45px) var(--space40-60px);
+    padding: var(--space24-36px) var(--space30-45px);
   }
 }
