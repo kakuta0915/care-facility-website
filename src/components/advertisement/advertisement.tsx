@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./advertisement.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 import img1 from "@/src/images/advertisement-1.png";

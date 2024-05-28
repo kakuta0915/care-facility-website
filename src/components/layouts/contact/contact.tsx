@@ -1,9 +1,10 @@
+import React from "react";
 import styles from "./contact.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
 const Contact: React.FC = () => {
   return (
-    <div className={[styles.contact, globalStyles.styles].join(" ")}>
+    <div className={`${styles.contact} ${globalStyles.styles}`}>
       <div className={styles.title}>
         <h2>Contact</h2>
         <p>お問い合わせ</p>

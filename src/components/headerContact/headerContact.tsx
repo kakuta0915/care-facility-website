@@ -1,9 +1,10 @@
+import React from "react";
 import styles from "./headerContact.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
 const HeaderContact: React.FC = () => {
   return (
-    <div className={[styles.headerContact, globalStyles.styles].join(" ")}>
+    <div className={`${styles.headerContact} ${globalStyles.styles}`}>
       <a href="/" className={styles.button1}>
         資料請求
       </a>

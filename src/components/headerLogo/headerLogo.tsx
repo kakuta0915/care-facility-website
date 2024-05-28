@@ -1,10 +1,11 @@
+import React from "react";
 import logo from "@/src/images/site-logo.png";
 import globalStyles from "@/src/globalStyle.module.css";
 import styles from "./headerLogo.module.css";
 
 const HeaderLogo: React.FC = () => {
   return (
-    <div className={[styles.headerLogo, globalStyles.styles].join(" ")}>
+    <div className={`${styles.headerLogo} ${globalStyles.styles}`}>
       <div className={styles.flex}>
         <img src={logo} alt="画像" />
         <div>
