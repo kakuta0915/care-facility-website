@@ -1,0 +1,35 @@
+.advertisement {
+  display: grid;
+  gap: var(--space16-18px);
+  margin: var(--space24-36px) 0 var(--space40-60px);
+  text-align: center;
+}
+
+.advertisement a img {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .advertisement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: var(--space16-18px);
+    margin: var(--space24-36px) var(--space80-120px) var(--space40-60px);
+  }
+
+  .advertisement a {
+    transition: all 0.3s;
+  }
+
+  .advertisement a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .advertisement a:hover {
+    transform: scale(1.1, 1.1);
+  }
+}

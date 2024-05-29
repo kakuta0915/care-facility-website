@@ -1,0 +1,51 @@
+.homeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space30-45px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: var(--space8-12px);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text h2 {
+  color: var(--green-2);
+}
+
+@media (min-width: 768px) {
+  .homeSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .homeSection.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .homeSection.reverse .text {
+    margin-left: 0;
+    margin-right: var(--space30-45px);
+  }
+
+  .image {
+    width: 55%;
+  }
+
+  .text {
+    margin-left: var(--space30-45px);
+  }
+
+  .text h2 {
+    margin-bottom: var(--space8-12px);
+  }
+}
