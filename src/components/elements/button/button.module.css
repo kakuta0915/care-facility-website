@@ -1,0 +1,37 @@
+.button {
+  text-align: center;
+}
+
+.button a {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green-2);
+  transition: all 0.3s;
+}
+
+.primary {
+  font-size: var(--font16-18px);
+  border-radius: 5px;
+  margin-top: var(--space30-45px);
+  padding: var(--space8-12px) var(--space30-45px);
+}
+
+.secondary {
+  font-size: var(--font10-14px);
+  border-radius: 3px;
+  margin-top: var(--space16-18px);
+  padding: var(--space8-12px) var(--font20-24px);
+}
+
+@media (min-width: 768px) {
+  .button a:hover {
+    background-color: var(--green-3);
+    color: var(--green-1);
+    transform: scale(1.1, 1.1);
+  }
+
+  .secondary {
+    font-size: var(--font16-18px);
+  }
+}
