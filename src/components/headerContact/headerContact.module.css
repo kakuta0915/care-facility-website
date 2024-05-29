@@ -1,0 +1,57 @@
+.headerContact {
+  text-align: right;
+  float: right;
+}
+
+.button1 {
+  display: inline-block;
+  color: var(--white);
+  padding: var(--space8-12px);
+  margin: var(--space8-12px);
+  border-radius: 3px;
+  background-color: var(--blue);
+}
+
+.button2 {
+  display: inline-block;
+  color: var(--white);
+  padding: var(--space8-12px);
+  margin: var(--space8-12px);
+  border-radius: 3px;
+  background-color: var(--red);
+}
+
+.headerContact > p {
+  text-align: center;
+  font-size: var(--font16-18px);
+  margin-bottom: var(--space8-12px);
+}
+
+@media (min-width: 768px) {
+  .headerContact a {
+    display: inline-block;
+    padding: calc(var(--space8-12px) * 0.5) var(--space24-36px);
+    border-radius: 5px;
+    color: var(--white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+  }
+
+  .headerContact a:hover {
+    box-shadow: none;
+    transform: scale(1, 1) translateY(2px);
+  }
+
+  .button1 {
+    background-color: var(--blue);
+  }
+  .button2 {
+    background-color: var(--red);
+    margin-left: var(--space16-18px);
+  }
+
+  .headerContact > p {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
