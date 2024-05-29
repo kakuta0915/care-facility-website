@@ -49,7 +49,7 @@ function Home() {
               date="2024年4月10日"
             />
           </div>
-          <Button href="/" label="詳細" />
+          <Button href="/" label="詳細" variant="primary" />
         </section>
         <HomeSection
           imgSrc={img5}

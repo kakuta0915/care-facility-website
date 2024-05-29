@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./homeSection.module.css";
+import Button from "../elements/button/button";
 
 interface HomeSectionProps {
   imgSrc: string;
@@ -22,6 +23,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({
       <div className={styles.text}>
         <h2>{title}</h2>
         <p>{description}</p>
+        <Button href="/" label="詳細" variant="secondary" />
       </div>
     </section>
   );
