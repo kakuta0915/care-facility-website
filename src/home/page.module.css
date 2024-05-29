@@ -1,5 +1,5 @@
 .newsSection {
-  margin: var(--space30-45px) auto;
+  margin: var(--space30-45px) auto var(--space60-90px);
 }
 
 .newsSection h3 {
