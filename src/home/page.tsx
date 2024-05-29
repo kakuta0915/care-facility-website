@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/layouts/header/header";
 import Hero from "../components/layouts/hero/hero";
 import Container from "../components/layouts/container/container";
+import Stack from "../components/elements/stack/stack";
+import Button from "../components/elements/button/button";
 import Contact from "../components/layouts/contact/contact";
 import Advertisement from "../components/advertisement/advertisement";
 import Footer from "../components/layouts/footer/footer";
@@ -11,7 +13,6 @@ import img1 from "@/src/images/image-1.jpg";
 import img2 from "@/src/images/image-2.jpg";
 import img3 from "@/src/images/image-3.jpg";
 import img4 from "@/src/images/image-4.jpg";
-import Stack from "../components/elements/stack/stack";
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function Home() {
               date="2024年4月10日"
             />
           </div>
+          <Button href="/" label="詳細" />
         </section>
         <Contact />
         <Advertisement />
