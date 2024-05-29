@@ -46,6 +46,7 @@
   }
 
   .text h2 {
+    font-size: clamp(2rem, 0.571rem + 2.98vw, 3.25rem);
     margin-bottom: var(--space8-12px);
   }
 }

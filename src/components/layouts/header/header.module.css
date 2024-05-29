@@ -1,11 +1,11 @@
 .header {
-  padding: var(--space16-18px);
+  padding: var(--space16-18px) var(--space16-18px) var(--space8-12px);
   display: flex;
   justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .header {
-    padding: var(--space24-36px) var(--space30-45px);
+    padding: var(--space24-36px) var(--space30-45px) var(--space8-12px);
   }
 }
