@@ -1,0 +1,23 @@
+.button {
+  margin-top: var(--space30-45px);
+  text-align: center;
+}
+
+.button a {
+  display: inline-block;
+  font-size: var(--font16-18px);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green-2);
+  border-radius: 8px;
+  padding: var(--space16-18px) var(--space30-45px);
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .button a:hover {
+    background-color: var(--green-3);
+    color: var(--green-1);
+    transform: scale(1.1, 1.1);
+  }
+}

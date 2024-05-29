@@ -8,9 +8,6 @@
 }
 
 @media (min-width: 768px) {
-  .newsSection {
-  }
-
   .newsBox {
     display: flex;
     flex-direction: row;
