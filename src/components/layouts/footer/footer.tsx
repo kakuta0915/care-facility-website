@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
@@ -9,25 +10,25 @@ const Footer: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <a href="/">ホーム</a>
+            <Link to="/">ホーム</Link>
           </li>
           <li>
-            <a href="/">健進会について</a>
+            <Link to="/about">健進会について</Link>
           </li>
           <li>
-            <a href="/">施設のご案内</a>
+            <Link to="/">施設のご案内</Link>
           </li>
           <li>
-            <a href="/">採用情報</a>
+            <Link to="/">採用情報</Link>
           </li>
           <li>
-            <a href="/">お問い合わせ</a>
+            <Link to="/">お問い合わせ</Link>
           </li>
         </ul>
       </nav>
       <div className={styles.policy}>
-        <a href="/">サイト利用について</a>
-        <a href="/">個人情報保護ポリシー</a>
+        <Link to="/">サイト利用について</Link>
+        <Link to="/">個人情報保護ポリシー</Link>
       </div>
       <p className={styles.copyright}>
         <small>Copyright &copy; 2024 Kenshinkai All Right Reserved.</small>

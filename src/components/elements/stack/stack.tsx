@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./stack.module.css";
 
 interface StackProps {
@@ -17,14 +18,14 @@ const Stack: React.FC<StackProps> = ({
   date,
 }) => {
   return (
-    <a href={href} className={styles.stack}>
+    <Link to={href} className={styles.stack}>
       <img src={imageSrc} alt="" />
       <div className={styles.text}>
         <h4>{title}</h4>
         <p className={styles.description}>{description}</p>
         <p>{date}</p>
       </div>
-    </a>
+    </Link>
   );
 };
 

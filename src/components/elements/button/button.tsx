@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./button.module.css";
 
 interface ButtonProps {
@@ -14,9 +15,9 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <div className={styles.button}>
-      <a href={href} className={styles[variant]}>
+      <Link to={href} className={styles[variant]}>
         {label}
-      </a>
+      </Link>
     </div>
   );
 };
