@@ -8,9 +8,15 @@ import img4 from "@/src/images/advertisement-4.png";
 import img5 from "@/src/images/advertisement-5.png";
 import img6 from "@/src/images/advertisement-6.png";
 
-const Advertisement: React.FC = () => {
+interface AdvertisementProps {
+  className?: string;
+}
+
+const Advertisement: React.FC<AdvertisementProps> = ({ className = "" }) => {
   return (
-    <div className={`${styles.advertisement} ${globalStyles.styles}`}>
+    <div
+      className={`${styles.advertisement} ${globalStyles.styles} ${className}`}
+    >
       <a href="/">
         <img src={img1} alt="" />
       </a>

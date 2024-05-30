@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./contact.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
-const Contact: React.FC = () => {
+interface ContactProps {
+  className?: string;
+}
+
+const Contact: React.FC<ContactProps> = ({ className = "" }) => {
   return (
-    <div className={`${styles.contact} ${globalStyles.styles}`}>
+    <div className={`${styles.contact} ${globalStyles.styles} ${className}`}>
       <div className={styles.title}>
         <h2>Contact</h2>
         <p>お問い合わせ</p>
