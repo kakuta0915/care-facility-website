@@ -7,6 +7,7 @@ interface HomeSectionProps {
   title: string;
   description: string;
   reverse?: boolean;
+  className?: string;
 }
 
 const HomeSection: React.FC<HomeSectionProps> = ({
@@ -14,10 +15,13 @@ const HomeSection: React.FC<HomeSectionProps> = ({
   title,
   description,
   reverse = false,
+  className = "",
 }) => {
   return (
     <section
-      className={`${styles.homeSection} ${reverse ? styles.reverse : ""}`}
+      className={`${styles.homeSection} ${
+        reverse ? styles.reverse : ""
+      } ${className}`}
     >
       <img src={imgSrc} alt={title} className={styles.image} />
       <div className={styles.text}>
