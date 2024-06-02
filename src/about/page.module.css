@@ -1,0 +1,12 @@
+.philosophy {
+  text-align: center;
+  margin: var(--space40-60px) auto;
+}
+
+.philosophy h3 {
+  margin-bottom: var(--space16-18px);
+}
+
+.philosophy p {
+  margin-bottom: var(--space16-18px);
+}

@@ -17,6 +17,7 @@
   --logo: clamp(2rem, 0.909rem + 5.45vw, 5rem); /* 32-80px (ロゴ) */
   --heading1: clamp(2rem, 1.273rem + 3.64vw, 4rem); /* 32-64px*/
   --heading2: clamp(1.5rem, -0.5rem + 4.17vw, 3.25rem); /* 24-52px*/
+  --heading3: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem); /* 20-40px */
 
   /* 余白 */
   --space8-12px: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem); /* 8-12px */
@@ -56,7 +57,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font28-34px);
+  font-size: var(--heading3);
 }
 
 p {
