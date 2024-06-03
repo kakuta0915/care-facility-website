@@ -3,7 +3,13 @@ import { useMediaQuery } from "react-responsive";
 import imgService1 from "@/src/images/image-service-1.jpg";
 import imgService2 from "@/src/images/image-service-2.jpg";
 
-const ResponsiveImage: React.FC = () => {
+interface ResponsiveImageProps {
+  className?: string;
+}
+
+const ResponsiveImage: React.FC<ResponsiveImageProps> = ({
+  className = "",
+}) => {
   const isMobile = useMediaQuery({ query: "(min-width: 768px)" });
 
   const imageSrc = isMobile ? imgService1 : imgService2;
@@ -13,6 +19,7 @@ const ResponsiveImage: React.FC = () => {
       src={imageSrc}
       alt="Responsive"
       style={{ width: "100%", height: "auto" }}
+      className={className}
     />
   );
 };
