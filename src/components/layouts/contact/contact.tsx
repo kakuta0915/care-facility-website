@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./contact.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
@@ -16,19 +17,19 @@ const Contact: React.FC<ContactProps> = ({ className = "" }) => {
       <div className={styles.contactBox}>
         <ul className={styles.link}>
           <li>
-            <a href="/" className={styles.button1}>
+            <Link to="/" className={styles.button1}>
               資料請求
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className={styles.button2}>
+            <Link to="/" className={styles.button2}>
               見学予約
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className={styles.button3}>
+            <Link to="/" className={styles.button3}>
               お問い合わせ
-            </a>
+            </Link>
           </li>
         </ul>
         <p className={styles.tell}>電話番号 0120-123-456</p>

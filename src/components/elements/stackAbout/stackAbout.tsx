@@ -1,32 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./stack.module.css";
+import styles from "./stackAbout.module.css";
 
-interface StackProps {
+interface StackAboutProps {
   href: string;
   imageSrc: string;
   title: string;
   description: string;
-  date: string;
 }
 
-const Stack: React.FC<StackProps> = ({
+const StackAbout: React.FC<StackAboutProps> = ({
   href,
   imageSrc,
   title,
   description,
-  date,
 }) => {
   return (
-    <Link to={href} className={styles.stack}>
+    <Link to={href} className={styles.stackAbout}>
       <img src={imageSrc} alt="" />
       <div className={styles.text}>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p className={styles.description}>{description}</p>
-        <p>{date}</p>
       </div>
     </Link>
   );
 };
 
-export default Stack;
+export default StackAbout;

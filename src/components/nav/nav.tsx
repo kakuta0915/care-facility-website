@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import ApartmentIcon from "@mui/icons-material/Apartment";
@@ -47,34 +48,34 @@ const Nav: React.FC = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="/" onClick={closeNav}>
+              <Link to="/" onClick={closeNav}>
                 <HomeIcon />
                 ホーム
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" onClick={closeNav}>
+              <Link to="about" onClick={closeNav}>
                 <InfoIcon />
                 健進会について
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" onClick={closeNav}>
+              <Link to="/" onClick={closeNav}>
                 <ApartmentIcon />
                 施設のご案内
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" onClick={closeNav}>
+              <Link to="/" onClick={closeNav}>
                 <BusinessCenterIcon />
                 採用情報
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" onClick={closeNav}>
+              <Link to="/" onClick={closeNav}>
                 <Call />
                 お問い合わせ
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./headerContact.module.css";
 import globalStyles from "@/src/globalStyle.module.css";
 
 const HeaderContact: React.FC = () => {
   return (
     <div className={`${styles.headerContact} ${globalStyles.styles}`}>
-      <a href="/" className={styles.button1}>
+      <Link to="/" className={styles.button1}>
         資料請求
-      </a>
+      </Link>
       <a href="/" className={styles.button2}>
         見学予約
       </a>
