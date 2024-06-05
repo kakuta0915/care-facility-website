@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             <Link to="/about">健進会について</Link>
           </li>
           <li>
-            <Link to="/">施設のご案内</Link>
+            <Link to="/infomation">施設のご案内</Link>
           </li>
           <li>
             <Link to="/">採用情報</Link>
