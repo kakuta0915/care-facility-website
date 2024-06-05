@@ -1,0 +1,74 @@
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  margin: var(--space40-60px) auto;
+  background-color: var(--gray-2);
+  border: 1px solid var(--green-2);
+}
+
+.infoSection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: var(--space16-18px) var(--space16-18px) 0.5rem;
+}
+
+.infoSectionText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  color: var(--green-2);
+  padding: 0 var(--space16-18px) var(--space16-18px);
+}
+
+.infoSectionText h4 {
+  margin-bottom: var(--space8-12px);
+}
+
+.icon {
+  margin-left: auto;
+  font-size: var(--logo);
+}
+
+.facilityContents {
+  margin: var(--space60-90px) auto;
+}
+
+.facilityContents h3 {
+  color: var(--green-2);
+  margin-bottom: var(--space8-12px);
+}
+
+.facilityList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .infoSection {
+    flex-direction: row;
+    transition: all 0.3s ease;
+  }
+
+  .infoSection:hover {
+    background-color: var(--green-3);
+  }
+
+  .infoSection img {
+    width: 50%;
+    padding: var(--space16-18px);
+  }
+
+  .infoSectionText {
+    padding: var(--space40-60px);
+  }
+
+  .infoSectionText h4 {
+    font-size: var(--font20-24px);
+  }
+
+  .facilityList {
+    flex-direction: row;
+  }
+}

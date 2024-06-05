@@ -54,13 +54,13 @@ const Nav: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="about" onClick={closeNav}>
+              <Link to="/about" onClick={closeNav}>
                 <InfoIcon />
                 健進会について
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={closeNav}>
+              <Link to="/infomation" onClick={closeNav}>
                 <ApartmentIcon />
                 施設のご案内
               </Link>
