@@ -19,7 +19,7 @@ const StackAbout: React.FC<StackAboutProps> = ({
     <Link to={href} className={styles.stackAbout}>
       <img src={imageSrc} alt="" />
       <div className={styles.text}>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <p className={styles.description}>{description}</p>
       </div>
     </Link>
