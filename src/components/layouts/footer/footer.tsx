@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <Link to="/">採用情報</Link>
           </li>
           <li>
-            <Link to="/">お問い合わせ</Link>
+            <Link to="/inquiry">お問い合わせ</Link>
           </li>
         </ul>
       </nav>

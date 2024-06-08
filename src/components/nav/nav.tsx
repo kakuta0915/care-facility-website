@@ -72,7 +72,7 @@ const Nav: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={closeNav}>
+              <Link to="/inquiry" onClick={closeNav}>
                 <Call />
                 お問い合わせ
               </Link>
