@@ -139,6 +139,11 @@
     margin: var(--space24-36px) var(--space16-18px) var(--space24-36px);
   }
 
+  .formPolicyGroup {
+    width: 80%;
+    margin: var(--space40-60px) auto;
+  }
+
   .error {
     display: block;
   }
