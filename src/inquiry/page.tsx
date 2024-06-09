@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/layouts/header/header";
 import Hero from "../components/layouts/hero/hero";
 import Container from "../components/layouts/container/container";
+import FAQ from "../components/elements/faqContainer/faqContainer";
 import Contact from "../components/layouts/contact/contact";
 import Advertisement from "../components/advertisement/advertisement";
 import Footer from "../components/layouts/footer/footer";
@@ -160,6 +161,13 @@ const Inquiry: React.FC = () => {
             </button>
           </div>
         </form>
+        <section className={styles.qaSection}>
+          <h3>
+            Q&A <br />
+            よくある質問
+          </h3>
+          <FAQ />
+        </section>
         <Contact className={useScrollAnimationStyles.fadeInUp} />
         <Advertisement className={useScrollAnimationStyles.fadeInUp} />
       </Container>
