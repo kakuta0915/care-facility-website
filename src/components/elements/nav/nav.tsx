@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import HeaderContact from "../headerContact/headerContact";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import Call from "@mui/icons-material/Call";
 import globalStyles from "@/src/globalStyle.module.css";
-import HeaderContact from "../headerContact/headerContact";
 import styles from "./nav.module.css";
 
 const Nav: React.FC = () => {
