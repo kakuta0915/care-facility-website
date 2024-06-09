@@ -66,7 +66,7 @@ const Nav: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={closeNav}>
+              <Link to="/recruitment" onClick={closeNav}>
                 <BusinessCenterIcon />
                 採用情報
               </Link>
