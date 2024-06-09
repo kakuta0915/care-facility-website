@@ -1,0 +1,77 @@
+.qaContainer {
+  margin: var(--space16-18px) auto;
+}
+
+.qaButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space8-12px);
+  margin-bottom: var(--space40-60px);
+}
+
+.qaButton {
+  font-size: var(--font16-18px);
+  border: 1px solid var(--green-2);
+  flex: 1 0 45%;
+  cursor: pointer;
+  padding: var(--space8-12px) var(--space16-18px);
+  cursor: pointer;
+}
+
+.qaButton:hover {
+  background-color: var(--green-3);
+}
+
+.qaContent {
+  margin-top: var(--space40-60px);
+}
+
+.qaContent h4 {
+  margin-bottom: 0.5rem;
+}
+
+.accordion {
+  border: 1px solid var(--gray-1);
+  border-radius: 5px;
+  margin-bottom: var(--space16-18px);
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space16-18px);
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.accordionHeader .flex {
+  display: flex;
+}
+
+.accordionHeader .iconQ {
+  margin-right: 0.25rem;
+  color: var(--blue);
+}
+
+.accordionHeader .status {
+  margin-left: 0.5rem;
+}
+
+.accordionContent {
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 0.5s ease;
+  padding: 0 var(--space16-18px);
+}
+
+.accordionContent .iconA {
+  color: var(--red);
+  margin-right: 0.5rem;
+}
+
+.accordionContent.open {
+  max-height: 500px;
+  padding: var(--space16-18px);
+}

@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import Home from "./home/page";
 import About from "./about/page";
 import Infomation from "./infomation/page";
-import globalStyle from "./globalStyle.module.css";
+import Inquiry from "./inquiry/page";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,8 +16,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/infomation" element={<Infomation />} />
-
-        {/* 他のルートもここに追加 */}
+        <Route path="/inquiry" element={<Inquiry />} />
       </Routes>
     </Router>
   </React.StrictMode>
