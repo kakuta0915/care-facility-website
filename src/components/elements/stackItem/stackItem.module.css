@@ -1,29 +1,49 @@
-.stack {
+.stackItem {
   display: flex;
-  justify-content: space-around;
   margin-bottom: 0.5rem;
   border: 1px solid var(--gray-1);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 }
 
-.stack img {
-  width: 40%;
-  height: auto;
+.stackItem .text {
+  flex: 1;
+  color: var(--base-color);
+  margin: var(--space8-12px);
+}
+
+.stackItem img {
   object-fit: cover;
   padding: var(--space8-12px);
 }
 
-.text {
+/* レイアウト垂直方向 (デフォルト) */
+.stackItem.column {
+  flex-direction: column;
+}
+
+/* レイアウト水平方向 */
+.stackItem.row {
+  flex-direction: row;
+}
+
+.stackItem.row img {
+  width: 40%;
+  height: auto;
+}
+
+.stackItem.text.row {
   width: 60%;
-  color: var(--base-color);
-  margin: var(--space8-12px);
 }
 
 .text h4 {
   font-size: clamp(0.75rem, 0.321rem + 0.89vw, 1.125rem);
   font-weight: bold;
   margin-bottom: var(--space8-12px);
+}
+
+.stackItem .customColor {
+  color: var(--green-2);
 }
 
 .text p {
@@ -35,17 +55,30 @@
 }
 
 @media (min-width: 768px) {
-  .stack {
+  .stackItem {
     flex-direction: column;
     margin: 0 1rem;
   }
 
-  .stack:hover {
+  .stackItem:hover {
     box-shadow: none;
     transform: scale(1.1, 1.1);
   }
 
-  .stack img {
+  .stackItem img {
+    width: 100%;
+  }
+
+  .stackItem.row {
+    flex-direction: column;
+  }
+
+  .stackItem.row img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stackItem.text.row {
     width: 100%;
   }
 
