@@ -6,7 +6,9 @@ interface StackItemProps {
   href: string;
   imageSrc: string;
   title: string;
-  description: string;
+  subTitle?: string;
+  description?: string;
+  name?: string;
   date?: string;
   useCustomColor?: boolean; // h4の色をカスタムカラーに変更するかどうか
   layout?: "row" | "column"; // レイアウトを指定するプロパティ
@@ -16,7 +18,9 @@ const StackItem: React.FC<StackItemProps> = ({
   href,
   imageSrc,
   title,
+  subTitle,
   description,
+  name,
   date,
   useCustomColor = false,
   layout = "column", // デフォルトは縦並び
@@ -26,8 +30,10 @@ const StackItem: React.FC<StackItemProps> = ({
       <img src={imageSrc} alt="" />
       <div className={styles.text}>
         <h4 className={useCustomColor ? styles.customColor : ""}>{title}</h4>
-        <p className={styles.description}>{description}</p>
-        {date && <p>{date}</p>}
+        {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
+        {description && <p className={styles.description}>{description}</p>}
+        {name && <p className={name}>{name}</p>}
+        {date && <p className={date}>{date}</p>}
       </div>
     </Link>
   );

@@ -37,16 +37,20 @@
 }
 
 .text h4 {
-  font-size: clamp(0.75rem, 0.321rem + 0.89vw, 1.125rem);
+  font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+  margin-bottom: 0.25rem;
+}
+
+.text .subTitle {
   font-weight: bold;
-  margin-bottom: var(--space8-12px);
+  margin-bottom: 0.25rem;
 }
 
 .stackItem .customColor {
   color: var(--green-2);
 }
 
-.text p {
+.text .date {
   font-size: var(--font10-14px);
 }
 
