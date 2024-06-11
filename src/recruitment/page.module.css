@@ -34,6 +34,32 @@
   flex-direction: column;
 }
 
+.desiredTalent {
+  margin: var(--space60-90px) 0;
+}
+
+.desiredTalent h3 {
+  text-align: center;
+  color: var(--green-2);
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent p {
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent ul {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent ul li {
+  font-weight: bold;
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .interviewSection .interviewContents {
     display: grid;

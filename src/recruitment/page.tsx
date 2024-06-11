@@ -102,6 +102,24 @@ const Recruitment: React.FC = () => {
             />
           </div>
         </section>
+        <section
+          className={`${useScrollAnimationStyles.fadeInUp} ${styles.desiredTalent}`}
+        >
+          <h3>~ 健進会の求める人材 ~</h3>
+          <p>
+            当社では、多様な価値観や経験を持つ人材が集まり、共に成長し、最高のサービスを提供することを信念としています。私たちは、以下のような方々を求めています。
+          </p>
+          <ul>
+            <li>積極的なコミュニケーションが得意な方</li>
+            <li>情熱と責任感を持ち、使命感を持って取り組む方</li>
+            <li>チームワークを大切にし、よりよいホームを作りたい方</li>
+            <li>成長意欲が高く、向上心を持っている方</li>
+            <li>ご入居者様やその家族と真摯に向き合える方</li>
+          </ul>
+          <p>
+            上記の条件を満たす方々であれば、特別な資格や経験を持たなくても、当社で活躍できる環境が整っています。一緒に、ご入居者様とスタッフがお互いに幸せを感じるようなサービスを提供しましょう！
+          </p>
+        </section>
         <Contact className={useScrollAnimationStyles.fadeInUp} />
         <Advertisement className={useScrollAnimationStyles.fadeInUp} />
       </Container>
