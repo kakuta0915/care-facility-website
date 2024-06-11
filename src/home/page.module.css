@@ -7,9 +7,14 @@
   margin-bottom: var(--space20-30px);
 }
 
+.newsBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space16-18px);
+}
+
 @media (min-width: 768px) {
   .newsBox {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
