@@ -1,5 +1,7 @@
 .stackItem {
   display: flex;
+  text-align: center;
+  align-items: center;
   margin-bottom: 0.5rem;
   border: 1px solid var(--gray-1);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -13,6 +15,7 @@
 }
 
 .stackItem img {
+  max-width: 100%;
   object-fit: cover;
   padding: var(--space8-12px);
 }
@@ -22,9 +25,10 @@
   flex-direction: column;
 }
 
-/* レイアウト水平方向 */
+/* レイアウト水平方向 (TOPページのNewsに使用中) */
 .stackItem.row {
   flex-direction: row;
+  text-align: left;
 }
 
 .stackItem.row img {
@@ -37,7 +41,7 @@
 }
 
 .text h4 {
-  font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
   margin-bottom: 0.25rem;
 }
 
@@ -61,12 +65,18 @@
 @media (min-width: 768px) {
   .stackItem {
     flex-direction: column;
-    margin: 0 1rem;
+    position: relative;
   }
 
   .stackItem:hover {
     box-shadow: none;
     transform: scale(1.1, 1.1);
+    background-color: var(--green-3);
+    z-index: 1;
+  }
+
+  .stackItem:not(:hover) {
+    z-index: 0;
   }
 
   .stackItem img {
@@ -88,5 +98,8 @@
 
   .text {
     width: auto;
+  }
+
+  .text h4 {
   }
 }

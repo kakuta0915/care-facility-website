@@ -1,0 +1,43 @@
+.messageSection,
+.interviewSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.messageSection h3,
+.interviewSection h3 {
+  color: var(--green-2);
+  margin-bottom: 0.25rem;
+}
+
+.messageSection {
+  align-items: center;
+  background-color: var(--gray-2);
+  padding: var(--space60-90px) var(--space20-30px);
+}
+
+.messageSection p {
+  margin-bottom: var(--space16-18px);
+}
+
+.interviewSection {
+  margin: var(--space60-90px) auto;
+}
+
+.interviewSection p {
+  margin-bottom: var(--space20-30px);
+}
+
+.interviewSection .interviewContents {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .interviewSection .interviewContents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space16-18px);
+  }
+}
