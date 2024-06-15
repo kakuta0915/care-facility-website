@@ -24,9 +24,7 @@ const ButtonContainer: React.FC<ButtonContainerProps> = ({
     <div className={styles.buttonContainer}>
       <button onClick={() => scrollToSection(caregiverRef)}>介護士</button>
       <button onClick={() => scrollToSection(nurseRef)}>看護師</button>
-      <button onClick={() => scrollToSection(careManagerRef)}>
-        ケアマネージャー
-      </button>
+      <button onClick={() => scrollToSection(careManagerRef)}>ケアマネ</button>
       <button onClick={() => scrollToSection(counselorRef)}>生活相談員</button>
       <button onClick={() => scrollToSection(managementRef)}>管理職</button>
       <button onClick={() => scrollToSection(assistanceRef)}>介護補助</button>

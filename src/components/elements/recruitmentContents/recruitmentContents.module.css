@@ -2,7 +2,7 @@
   max-width: 900px;
   width: 94%;
   padding: var(--space40-60px) var(--space24-36px);
-  margin: var(--space80-120px) auto;
+  margin: var(--space60-90px) auto;
   background: var(--white);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
