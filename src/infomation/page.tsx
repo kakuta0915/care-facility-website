@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "../components/layouts/header/header";
 import Hero from "../components/layouts/hero/hero";
 import Container from "../components/layouts/container/container";
-import StackInfo from "../components/stackInfo/stackInfo";
 import Contact from "../components/layouts/contact/contact";
-import Advertisement from "../components/advertisement/advertisement";
+import Advertisement from "../components/layouts/advertisement/advertisement";
 import Footer from "../components/layouts/footer/footer";
 import globalStyles from "@/src/globalStyle.module.css";
 import styles from "./page.module.css";
@@ -23,6 +22,7 @@ import img17 from "@/src/images/image-17.jpg";
 import img18 from "@/src/images/image-18.jpg";
 import img19 from "@/src/images/image-19.jpg";
 import img20 from "@/src/images/image-20.jpg";
+import StackItem from "../components/elements/stackItem/stackItem";
 
 const Infomation: React.FC = () => {
   useScrollAnimation([
@@ -49,9 +49,9 @@ const Infomation: React.FC = () => {
         >
           <h3>特別養護老人ホーム</h3>
           <div className={styles.facilityList}>
-            <StackInfo href="/infomation" title="健進園" imageSrc={img12} />
-            <StackInfo href="/infomation" title="第二健進園" imageSrc={img13} />
-            <StackInfo href="/infomation" title="第三健進園" imageSrc={img14} />
+            <StackItem href="/infomation" title="健進園" imageSrc={img12} />
+            <StackItem href="/infomation" title="第二健進園" imageSrc={img13} />
+            <StackItem href="/infomation" title="第三健進園" imageSrc={img14} />
           </div>
         </div>
         <div
@@ -59,13 +59,13 @@ const Infomation: React.FC = () => {
         >
           <h3>養護老人ホーム・ケアハウス・軽費老人ホーム</h3>
           <div className={styles.facilityList}>
-            <StackInfo href="/infomation" title="健進館" imageSrc={img15} />
-            <StackInfo
+            <StackItem href="/infomation" title="健進館" imageSrc={img15} />
+            <StackItem
               href="/infomation"
               title="健進会ケアハウス"
               imageSrc={img16}
             />
-            <StackInfo
+            <StackItem
               href="/infomation"
               title="健進会経費老人ホーム"
               imageSrc={img17}
@@ -77,13 +77,13 @@ const Infomation: React.FC = () => {
         >
           <h3>高齢者保健医療総合センター</h3>
           <div className={styles.facilityList}>
-            <StackInfo href="/infomation" title="健進会病院" imageSrc={img18} />
-            <StackInfo
+            <StackItem href="/infomation" title="健進会病院" imageSrc={img18} />
+            <StackItem
               href="/infomation"
               title="健進会第二病院"
               imageSrc={img19}
             />
-            <StackInfo
+            <StackItem
               href="/infomation"
               title="健進会第三病院"
               imageSrc={img20}

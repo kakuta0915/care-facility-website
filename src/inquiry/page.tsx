@@ -5,7 +5,7 @@ import Hero from "../components/layouts/hero/hero";
 import Container from "../components/layouts/container/container";
 import FAQ from "../components/elements/faqContainer/faqContainer";
 import Contact from "../components/layouts/contact/contact";
-import Advertisement from "../components/advertisement/advertisement";
+import Advertisement from "../components/layouts/advertisement/advertisement";
 import Footer from "../components/layouts/footer/footer";
 import globalStyles from "@/src/globalStyle.module.css";
 import styles from "./page.module.css";

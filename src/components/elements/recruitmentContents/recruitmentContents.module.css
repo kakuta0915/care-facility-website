@@ -1,0 +1,23 @@
+.recruitmentContents {
+  max-width: 900px;
+  width: 94%;
+  padding: var(--space40-60px) var(--space24-36px);
+  margin: var(--space60-90px) auto;
+  background: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.recruitmentContents h3 {
+  text-align: center;
+  margin-bottom: var(--space24-36px);
+}
+
+.recruitmentContents table {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .recruitmentContents {
+    padding: calc(var(--space80-120px) * 0.8) var(--space40-60px);
+  }
+}

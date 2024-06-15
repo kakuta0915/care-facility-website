@@ -1,6 +1,6 @@
 import React from "react";
+import Button from "../button/button";
 import styles from "./homeSection.module.css";
-import Button from "../elements/button/button";
 
 interface HomeSectionProps {
   imgSrc: string;

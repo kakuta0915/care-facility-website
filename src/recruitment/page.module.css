@@ -1,0 +1,152 @@
+.messageSection,
+.interviewSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.messageSection h3,
+.interviewSection h3 {
+  color: var(--green-2);
+  margin-bottom: 0.25rem;
+}
+
+.messageSection {
+  align-items: center;
+  background-color: var(--gray-2);
+  padding: var(--space60-90px) var(--space20-30px);
+}
+
+.messageSection p {
+  margin-bottom: var(--space16-18px);
+}
+
+.interviewSection {
+  margin: var(--space60-90px) auto;
+}
+
+.interviewSection p {
+  margin-bottom: var(--space20-30px);
+}
+
+.interviewSection .interviewContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.desiredTalent {
+  margin: var(--space60-90px) 0;
+}
+
+.desiredTalent h3 {
+  text-align: center;
+  color: var(--green-2);
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent p {
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent ul {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: var(--space20-30px);
+}
+
+.desiredTalent ul li {
+  font-weight: bold;
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  display: block;
+}
+
+th {
+  font-weight: normal;
+  vertical-align: middle;
+  padding: var(--space16-18px);
+  background: var(--green-4);
+}
+
+td {
+  padding: 0.5rem var(--space16-18px) var(--space24-36px);
+}
+
+td ul {
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: var(--space16-18px);
+}
+
+td ul li {
+  margin-bottom: var(--space8-12px);
+}
+
+.overViewTable td ul li {
+  list-style: disc;
+}
+
+.careTable p {
+  margin-bottom: var(--space8-12px);
+}
+
+.careTable td ul li {
+  list-style: disc;
+}
+
+.careTable td div ul li {
+  list-style: none;
+}
+
+.nurseTable p {
+  margin-bottom: var(--space8-12px);
+}
+
+.nurseTable td ul li {
+  list-style: disc;
+}
+
+.nurseTable td ul li span {
+  display: block;
+}
+
+.careManagerTable p {
+  margin-top: 0.25rem;
+  margin-bottom: var(--space8-12px);
+}
+
+.careManagerTable ul li {
+  list-style: disc;
+}
+
+@media (min-width: 768px) {
+  .interviewSection .interviewContents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space16-18px);
+  }
+
+  /*Table*/
+  tr:nth-child(odd) {
+    background: var(--green-4);
+  }
+  tr:nth-child(even) th {
+    background: var(--white);
+  }
+  th,
+  td {
+    display: table-cell;
+    padding: var(--space20-30px);
+  }
+  th {
+    width: 24%;
+    vertical-align: middle;
+  }
+  td {
+    width: 76%;
+  }
+}

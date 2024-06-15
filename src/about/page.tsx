@@ -2,10 +2,10 @@ import React from "react";
 import Header from "../components/layouts/header/header";
 import Hero from "../components/layouts/hero/hero";
 import Container from "../components/layouts/container/container";
-import StackAbout from "../components/elements/stackAbout/stackAbout";
-import ResponsiveImage from "../components/responsiveImage/responsiveImage";
+import StackItem from "../components/elements/stackItem/stackItem";
+import ResponsiveImage from "../components/elements/responsiveImage/responsiveImage";
 import Contact from "../components/layouts/contact/contact";
-import Advertisement from "../components/advertisement/advertisement";
+import Advertisement from "../components/layouts/advertisement/advertisement";
 import Footer from "../components/layouts/footer/footer";
 import useScrollAnimation from "../components/elements/animation/useScrollAnimation";
 import useScrollAnimationStyles from "../components/elements/animation/useScrollAnimation.module.css";
@@ -43,19 +43,19 @@ const About: React.FC = () => {
         <section
           className={`${styles.aboutContents} ${useScrollAnimationStyles.fadeInUp}`}
         >
-          <StackAbout
+          <StackItem
             href="/about"
             imageSrc={img9}
             title="ご挨拶"
             description="理事長のご挨拶と理念をご紹介いたします。"
           />
-          <StackAbout
+          <StackItem
             href="/about"
             imageSrc={img5}
             title="法人概要"
             description="法人の概要についてご紹介いたします。"
           />
-          <StackAbout
+          <StackItem
             href="/about"
             imageSrc={img10}
             title="交通アクセス"

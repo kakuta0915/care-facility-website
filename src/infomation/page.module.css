@@ -41,8 +41,9 @@
 }
 
 .facilityList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space16-18px);
 }
 
 @media (min-width: 768px) {
@@ -69,6 +70,6 @@
   }
 
   .facilityList {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
