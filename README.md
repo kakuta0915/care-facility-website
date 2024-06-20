@@ -1,47 +1,87 @@
-# Getting Started with Create React App
+## 介護施設 Web サイト制作
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TypeScript と React の学習を目的に、介護施設の架空の Web サイトを作成しました。この Web サイトは、モダンでレスポンシブな Web アプリケーションを構築しています。
+あくまで TypeScript と React の学習のためであるため、Web サイト内のコンテンツやデザインは簡単な内容となっています。
 
-## Available Scripts
+## Web サイト制作の概要
 
-In the project directory, you can run:
+この Web サイトでは、最新の Web 技術を活用して高齢者やその家族にとって使いやすく、情報が豊富な Web サイトを作成することを意識して制作しました。
 
-### `npm start`
+#### ユーザーエクスペリエンスの向上
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 直感的なナビゲーション
+  サイト内を簡単に移動できるように、直感的でわかりやすいナビゲーションメニューを設置しました。
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- レスポンシブデザイン
+  モバイルデバイスからデスクトップまで、どのデバイスでも快適に閲覧できるように、レスポンシブデザインを採用しています。各デバイスに応じたレイアウトの調整を行い、ユーザーエクスペリエンスを最適化しました。
 
-### `npm test`
+#### 主要なページ内容・機能
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ホームページ
+  お知らせ・健進会について・施設のご案内・採用情報・お問い合わせのコンテンツを掲載しています。
 
-### `npm run build`
+- 健進会について
+  健進会の理念・理事長の挨拶・法人概要・交通アクセスを掲載しています。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 施設のご案内
+  健進会が運営する施設をご紹介しています。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 採用情報
+  健進会が求める人材・各職種のインタビュー・募集概要を掲載しています。応募を検討している方に対して、具体的な職務内容や職場環境を伝えることを目指しています。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- お問い合わせ
+  サイト訪問者が質問や相談を簡単に送信できるように、シンプルで使いやすいお問い合わせフォームを実装しています。
 
-### `npm run eject`
+#### 技術スタック
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- TypeScript
+- React
+- CSS
+- Vercel
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React を使用して、コンポーネントベースのモジュール化されたコードを実現しています。これにより、コードの再利用性とメンテナンス性が向上しました。また、TypeScript を使用することで、静的型付けによるエラー検出が可能となり、より堅牢で信頼性の高いコードを作成することができました。CSS は CSS Modules を用いて、スタイルの管理とコンポーネントの分離を効率化しています。また、レスポンシブデザインを容易に実現するために、メディアクエリを活用しています。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Web サイト制作の進め方
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### 要件定義
 
-## Learn More
+1. ユーザーグループ
+   老年者、家族、施設スタッフなど、異なるユーザーグループに対応するための異なるコンテンツと機能を提供する。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. 情報提供
+   施設の概要、サービス、設備、料金体系などの詳細な情報を提供する。
+   よく検索されるキーワードに基づいた FAQ（よくある質問）セクションを用意する。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# care-facility-website
+3. お問い合わせと予約
+   オンラインで問い合わせや見学予約ができる専用フォームを用意する。
+
+4. スタッフ情報
+   スタッフのプロフィールや担当業務などを掲載し、利用者や家族が信頼できる環境であることを感じられるようにする。
+
+5. セキュリティとプライバシー
+   個人情報の取り扱いに関するプライバシーポリシーを公開し、安全な通信手段（SSL など）を使用してユーザーデータを保護する。
+
+#### モックアップ作成
+
+Figma を使って、サイトマップやデザインカンプ、モックアップを作成しました。これにより、視覚的なイメージを具体化し、デザインのフィードバックを得ることができました。
+
+** サイトマップ **
+[@/src/images/sitemap-1.png]
+
+** ワイヤーフレーム **
+[@/src/images/kenshinkai-wf.png]
+
+** デザインカンプ **
+[@/src/images/kenshinkai-design-comp.png]
+[@/src/images/kenshinkai-design-tokens.png]
+
+#### 開発段階
+
+再利用可能な React コンポーネントを設計・実装しました。各コンポーネントは独立しており、必要に応じて他のコンポーネントに組み込むことができます。
+
+#### デプロイ
+
+Vercel を利用して、プロジェクトをインターネット上にデプロイしました。
+
+##　制作を終えて
+この Web サイト制作を通じて、TypeScript と React の深い理解と実践的なスキルを習得することができました。また、モダンな Web アプリケーションの開発プロセス全体を経験することで、実際の業務における即戦力となる能力を身につけました。
