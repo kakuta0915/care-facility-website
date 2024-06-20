@@ -65,15 +65,15 @@ React を使用して、コンポーネントベースのモジュール化さ�
 
 Figma を使って、サイトマップやデザインカンプ、モックアップを作成しました。これにより、視覚的なイメージを具体化し、デザインのフィードバックを得ることができました。
 
-** サイトマップ **
-[@/src/images/sitemap-1.png]
+**サイトマップ**
+[sitemap-1.png]
 
-** ワイヤーフレーム **
-[@/src/images/kenshinkai-wf.png]
+**ワイヤーフレーム**
+[kenshinkai-wf.png]
 
-** デザインカンプ **
-[@/src/images/kenshinkai-design-comp.png]
-[@/src/images/kenshinkai-design-tokens.png]
+**デザインカンプ**
+[kenshinkai-design-comp.png]
+[kenshinkai-design-tokens.png]
 
 #### 開発段階
 
@@ -83,5 +83,6 @@ Figma を使って、サイトマップやデザインカンプ、モックア�
 
 Vercel を利用して、プロジェクトをインターネット上にデプロイしました。
 
-##　制作を終えて
+## 制作を終えて
+
 この Web サイト制作を通じて、TypeScript と React の深い理解と実践的なスキルを習得することができました。また、モダンな Web アプリケーションの開発プロセス全体を経験することで、実際の業務における即戦力となる能力を身につけました。
