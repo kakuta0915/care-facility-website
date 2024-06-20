@@ -72,7 +72,7 @@ Figma を使って、サイトマップやデザインカンプ、モックア�
 ![kenshinkai-wf](https://github.com/kakuta0915/kenshinkai/assets/107552595/f1b73003-3e9e-4f70-814f-c94641c70daa)
 
 **デザインカンプ**
-<img width="835" alt="kenshinkai-design-comp" src="https://github.com/kakuta0915/kenshinkai/assets/107552595/ea829da4-d86e-4ac7-a1da-e9dea983f6dd">
+<img width="1200" alt="kenshinkai-design-comp" src="https://github.com/kakuta0915/kenshinkai/assets/107552595/ea829da4-d86e-4ac7-a1da-e9dea983f6dd">
 
 **デザイントークン**
 ![kenshinkai-design-tokens](https://github.com/kakuta0915/kenshinkai/assets/107552595/ec04dbef-21d5-4f8e-96be-4b6ea733b05c)
